@@ -12,5 +12,11 @@ class App < Sinatra::Base
   get '/friends' do
     # Write your code here!
 
+  post '/reverse' do 
+    puts params
+
+    erb :reversed
+  end
+
   end
 end
